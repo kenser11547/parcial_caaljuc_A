@@ -35,6 +35,16 @@ const consultarPerson = async (evento) => {
         console.log(personaje.origin.name);
         console.log(personaje.location.name);
         console.log(personaje.image);
+
+        //creacion de elementos
+        document.getElementById('nombrePersonaje').innerText = personaje.name;
+        document.getElementById('especiePersonaje').innerText = personaje.species;
+        document.getElementById('generoPersonaje').innerText = personaje.gender;
+        document.getElementById('origenPersonaje').innerText = personaje.origin.name;
+        document.getElementById('ubicacionPersonaje').innerText = personaje.location.name;
+        document.getElementById('imagenPersonaje').src = personaje.image;
+        document.getElementById('resultado').innerText = 'Personaje encontrado';
+        tabla.style.display = '';
       }
     }
     }
