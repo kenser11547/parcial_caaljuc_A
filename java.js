@@ -3,6 +3,15 @@ const formul = document.querySelector('form');
 const tabla = document.querySelector('table');
 const button = document.getElementById('botonConsultar');
 
+const tabla1 = document.getElementById('tabla1');
+const tabla2 = document.getElementById('tabla2');
+const tabla3 = document.getElementById('tabla3');
+
+// Ocultar todas las tablas al cargar la página
+tabla1.style.display = 'none';
+tabla2.style.display = 'none';
+tabla3.style.display = 'none';
+
 const consultarPerson = async (evento) => {
     evento.preventDefault();
     let nombrePerson = formul.person.value;
@@ -27,7 +36,8 @@ const consultarPerson = async (evento) => {
 
         if (personajes.length === '') {
             document.getElementById('resultado').innerText = '-No se encontraron personajes-';
-            console.log('no se encontro el caracter')
+            console.log('no se encontro el caracter');
+            tabla1.style.display = 'none';
         } else {
             const personaje = personajes[0];
             console.log(personaje.name);
@@ -45,7 +55,7 @@ const consultarPerson = async (evento) => {
             document.getElementById('ubicacionPersonaje').innerText = personaje.location.name;
             document.getElementById('imagenPersonaje').src = personaje.image;
             document.getElementById('resultado').innerText = '-PERSONAJE ENCONTRADO-';
-            tabla.style.display = '';
+            tabla1.style.display = '';
         }
         //si no se encuentran los datos
     }else {
@@ -81,6 +91,7 @@ const consultarepisodio = async (evento) => {
         if (personajes.length === '') {
             document.getElementById('resultado').innerText = '-No se encontraron personajes-';
             console.log('no se encontro episodio');
+            tabla2.style.display = 'none';
         } else {
             const personaje = personajes[0];
             console.log(personaje.id);
@@ -97,7 +108,7 @@ const consultarepisodio = async (evento) => {
             document.getElementById('episodioPersonaje').innerText = personaje.episode;
             document.getElementById('creacionPersonaje').innerText = personaje.created;
             document.getElementById('resultado').innerText = '-PERSONAJE ENCONTRADO-';
-            tabla.style.display = '';
+            tabla2.style.display = '';
         }
         //si no se encuentran los datos
     }else {
@@ -134,6 +145,7 @@ const consultarlocalizacion = async (evento) => {
         if (personajes.length === '') {
             document.getElementById('resultado').innerText = '-No se encontraron personajes-';
             console.log('no se encontro ubicacion');
+            tabla3.style.display = 'none';
 
         } else {
             const personaje = personajes[0];
@@ -148,7 +160,7 @@ const consultarlocalizacion = async (evento) => {
             document.getElementById('epiPersonaje').innerText = personaje.dimension;
             document.getElementById('crePersonaje').innerText = personaje.created;
             document.getElementById('resultado').innerText = '-PERSONAJE ENCONTRADO-';
-            tabla.style.display = '';
+            tabla3.style.display = '';
         }
         //si no se encuentran los datos
     }else {
