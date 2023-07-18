@@ -7,7 +7,7 @@ const consultarPerson = async (evento) => {
     evento.preventDefault();
     let nombrePerson = formul.person.value;
     if (nombrePerson === '') {
-      alert("Debe ingresar el nombre de un personaje");
+      alert("Debe ingresar el nombre de un país");
       return;
     }
       // CONFIGURANDO LA PETICIÓN y el url de API DE RICK AND MORTY ATRAVEZ DEL METODO GET
@@ -50,7 +50,7 @@ const consultarPerson = async (evento) => {
         //si no se encuentran los datos
     }else {
     document.getElementById('resultado').innerText = '-No se encontró el personaje-';
-    console.log('no se encontro caracter personaje')
+    console.log('no se encontro caracter persona')
     }
 } catch (error) {
   console.log(error);
@@ -60,7 +60,7 @@ const consultarepisodio = async (evento) => {
     evento.preventDefault();
     let nombrePerson = formul.person.value;
     if (nombrePerson === '') {
-      alert("Debe ingresar el nombre de un personaje");
+      alert("Debe ingresar el nombre de un país");
       return;
     }
       // CONFIGURANDO LA PETICIÓN y el url de API DE RICK AND MORTY ATRAVEZ DEL METODO GET
@@ -78,9 +78,9 @@ const consultarepisodio = async (evento) => {
         const data = await respuesta.json();
         const personajes = data.results;
 
-        if (personajes.length === '0') {
+        if (personajes.length === '') {
             document.getElementById('resultado').innerText = '-No se encontraron personajes-';
-            console.log('no se encontro episodio')
+            console.log('no se encontro episodio');
         } else {
             const personaje = personajes[0];
             console.log(personaje.id);
@@ -102,7 +102,8 @@ const consultarepisodio = async (evento) => {
         //si no se encuentran los datos
     }else {
     document.getElementById('resultado').innerText = '-No se encontró el personaje-';
-    console.log('no se encontro episodio')
+    console.log('no se encontro episodio');
+
     }
 } catch (error) {
   console.log(error);
@@ -130,9 +131,10 @@ const consultarlocalizacion = async (evento) => {
         const data = await respuesta.json();
         const personajes = data.results;
 
-        if (personajes.length === '0') {
+        if (personajes.length === '') {
             document.getElementById('resultado').innerText = '-No se encontraron personajes-';
-            console.log('no se encontro ubicacion')
+            console.log('no se encontro ubicacion');
+
         } else {
             const personaje = personajes[0];
             console.log(personaje.name);
@@ -151,8 +153,7 @@ const consultarlocalizacion = async (evento) => {
         //si no se encuentran los datos
     }else {
     document.getElementById('resultado').innerText = '-No se encontró el personaje-';
-    console.log('no se encontro ubicacion')
-
+    console.log('no se encontro ubicacion');
     }
 } catch (error) {
   console.log(error);

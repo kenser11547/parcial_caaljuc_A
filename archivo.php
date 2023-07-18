@@ -69,7 +69,7 @@
     <h1>BUSCAR INFORMACION DE MI PERSONAJE FAVORITO</h1>
     <div>
         <div class="column4">
-            <table border="3px solid">
+            <table border="3px solid" id="tabla1">
                 <thead>
                     <tr>
                         <th>CARACTER</th>
@@ -105,7 +105,7 @@
             </table>
         </div>
         <div class="column3">
-            <table border="3px solid">
+            <table border="3px solid" id="tabla2">
                 <thead>
                     <tr>
                         <th>EPISODIO</th>
@@ -137,7 +137,7 @@
             </table> 
         </div>
         <div class="column5">
-            <table border="3px solid">
+            <table border="3px solid" id="tabla3">
                 <thead>
                     <tr>
                         <th>LOCALIZACION</th>
