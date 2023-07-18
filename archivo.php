@@ -17,3 +17,51 @@
     </form>
     <p id="resultado"></p>
 </body>
+</html>
+<!---se inserto una tabla para una api de rick and morty--->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONSULTA FETCH</title>
+</head>
+<body>
+    <h1>BUSCAR INFORMACION DE MI PERSONAJE RICK AND MORTY</h1>
+    <table border="3px solid">
+        <thead>
+            <tr>
+                <th>RESULTADO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>NOMBRE</td>
+                <td id="nombrePersonaje"></td>
+            </tr>
+            <tr>
+                <td>ESPECIE</td>
+                <td id="especiePersonaje"></td>
+            </tr>
+            <tr>
+                <td>GENERO</td>
+                <td id="generoPersonaje"></td>
+            </tr>
+            <tr>
+                <td>ORIGEN</td>
+                <td id="origenPersonaje"></td>
+            </tr>
+            <tr>
+                <td>Ubicacion</td>
+                <td id="ubicacionPersonaje"></td>
+            </tr>
+            <tr>
+                <td>BANDERA</td>
+                <td><img src="" alt="" id="imagenPersonaje"></td>
+            </tr>
+        </tbody>
+    </table> 
+    <!---se ingresa el script para mandar a llamar el archivo de js--->
+    <script src="java.js"></script>
+</body>
+</html>
