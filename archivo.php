@@ -5,6 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API FETCH JAVA</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    form {
+        margin-top: 50px;
+    }
+
+    input[type="text"], button {
+        padding: 10px;
+        font-size: 16px;
+    }
+</style>
 </head>
 <body>
     <h3>RICK AND MORTY</h3>
