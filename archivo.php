@@ -17,6 +17,10 @@
     form {
         margin-top: 50px;
     }
+    table {
+        margin-left: 600px;
+        background-color: white;
+    }
 
     input[type="text"], button {
         padding: 10px;
@@ -48,7 +52,8 @@
     <table border="3px solid">
         <thead>
             <tr>
-                <th>RESULTADO</th>
+                <th>INFORMACION</th>
+                <th>RESULTADO</TH>
             </tr>
         </thead>
         <tbody>
