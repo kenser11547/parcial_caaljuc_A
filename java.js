@@ -46,6 +46,13 @@ const consultarPerson = async (evento) => {
         document.getElementById('resultado').innerText = 'Personaje encontrado';
         tabla.style.display = '';
       }
+      //si no se encuentran los datos
+    }else {
+    document.getElementById('resultado').innerText = 'No se encontró el personaje';
     }
+} catch (error) {
+  console.log(error);
     }
 }
+//desencadenando eventos atravez de addeventlistener
+formul.addEventListener('submit', consultarPerson);
