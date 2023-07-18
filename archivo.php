@@ -52,11 +52,11 @@
                 <td id="origenPersonaje"></td>
             </tr>
             <tr>
-                <td>Ubicacion</td>
+                <td>LOCALIZADO</td>
                 <td id="ubicacionPersonaje"></td>
             </tr>
             <tr>
-                <td>BANDERA</td>
+                <td>IMAGEN</td>
                 <td><img src="" alt="" id="imagenPersonaje"></td>
             </tr>
         </tbody>
