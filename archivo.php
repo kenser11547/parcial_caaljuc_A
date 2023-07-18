@@ -7,6 +7,9 @@
     <title>API FETCH JAVA</title>
     <style>
     body {
+        background:linear-gradient(30deg, crimson,sienna, royalblue, indianred, purple);
+        background-size:cover;
+        background-attachment: fixed;
         font-family: Arial, sans-serif;
         text-align: center;
     }
