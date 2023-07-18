@@ -26,7 +26,7 @@ const consultarPerson = async (evento) => {
       const personajes = data.results;
 
       if (personajes.length === '') {
-        document.getElementById('resultado').innerText = 'No se encontraron personajes';
+        document.getElementById('resultado').innerText = '-No se encontraron personajes-';
       } else {
         const personaje = personajes[0];
         console.log(personaje.name);
@@ -43,12 +43,12 @@ const consultarPerson = async (evento) => {
         document.getElementById('origenPersonaje').innerText = personaje.origin.name;
         document.getElementById('ubicacionPersonaje').innerText = personaje.location.name;
         document.getElementById('imagenPersonaje').src = personaje.image;
-        document.getElementById('resultado').innerText = 'Personaje encontrado';
+        document.getElementById('resultado').innerText = '-PERSONAJE ENCONTRADO-';
         tabla.style.display = '';
       }
       //si no se encuentran los datos
     }else {
-    document.getElementById('resultado').innerText = 'No se encontró el personaje';
+    document.getElementById('resultado').innerText = '-No se encontró el personaje-';
     }
 } catch (error) {
   console.log(error);
