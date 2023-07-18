@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <title>API FETCH JAVA</title>
     <style>
     body {
@@ -34,10 +35,8 @@
 /*aqui se diseña el estilo para la seccion de menu de la pagina*/
 .column4 {
   float:left;
-  width: 30%;
-  padding: 15px;
-  border-radius: 50px;
-  border-color: #000000;
+  width: 35%;
+  padding: 10px;
 }
 /*aqui se diseña el estilo para la seccion de menu de la pagina*/
 .column5 {
@@ -45,14 +44,28 @@
   width: 30%;
   padding: 15px;
 }
+
+.form-control {
+    width: 50%;
+    margin-left: 400px;
+}
+.table-bordered.table-danger {
+        border: 4px solid red;
+        border-radius: 30px;
+    }
+h1 {
+    text-shadow: 2px 4px 10px white;
+}
 </style>
 </head>
 <body>
     <h3>RICK AND MORTY</h3>
-    <form id="formu">
+    <form id="formu" class="form-group">
         <!--ingresar el formulario para consultar datos -->
-        <input type="text" name="person" id="person">
-        <button type="submit">Consultar</button> 
+        <div class="form-group">
+            <input type="text" name="person" id="person" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Consultar</button>
     </form>
     <p id="resultado"></p>
 </body>
@@ -69,8 +82,8 @@
     <h1>BUSCAR INFORMACION DE MI PERSONAJE FAVORITO</h1>
     <div>
         <div class="column4">
-            <table border="3px solid" id="tabla1">
-                <thead>
+            <table  class="table table-bordered table-danger" id="tabla1">
+                <thead class="thead-info">
                     <tr>
                         <th>CARACTER</th>
                         <th>RESULTADO</TH>
@@ -105,7 +118,7 @@
             </table>
         </div>
         <div class="column3">
-            <table border="3px solid" id="tabla2">
+            <table class="table table-bordered table-danger" id="tabla2">
                 <thead>
                     <tr>
                         <th>EPISODIO</th>
@@ -137,7 +150,7 @@
             </table> 
         </div>
         <div class="column5">
-            <table border="3px solid" id="tabla3">
+            <table class="table table-bordered table-danger" id="tabla3">
                 <thead>
                     <tr>
                         <th>LOCALIZACION</th>
