@@ -7,7 +7,6 @@
     <title>API FETCH JAVA</title>
 </head>
 <body>
-    <h1>DATOS DE PERSONAJE</h1>
     <h3>RICK AND MORTY</h3>
     <form id="formu">
         <!--ingresar el formulario para consultar datos -->
@@ -27,7 +26,7 @@
     <title>CONSULTA FETCH</title>
 </head>
 <body>
-    <h1>BUSCAR INFORMACION DE MI PERSONAJE RICK AND MORTY</h1>
+    <h1>BUSCAR INFORMACION DE MI PERSONAJE FAVORITO</h1>
     <table border="3px solid">
         <thead>
             <tr>
