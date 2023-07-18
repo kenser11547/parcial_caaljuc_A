@@ -15,4 +15,27 @@ const consultarPerson = async (evento) => {
       const config = {
         method: 'GET'
       };
+       // Consulta a la API SI SE ESTA BUSCANDO O NO
+  document.getElementById('resultado').innerText = 'Buscando el archivo que se desea...';
+  try {
+    // CONSULTA A LA API USANDO FETCH
+    const respuesta = await fetch(url, config);
+    if (respuesta.ok) {
+        //GENERAR JSON
+      const data = await respuesta.json();
+      const personajes = data.results;
+
+      if (personajes.length === '') {
+        document.getElementById('resultado').innerText = 'No se encontraron personajes';
+      } else {
+        const personaje = personajes[0];
+        console.log(personaje.name);
+        console.log(personaje.species);
+        console.log(personaje.gender);
+        console.log(personaje.origin.name);
+        console.log(personaje.location.name);
+        console.log(personaje.image);
+      }
     }
+    }
+}
