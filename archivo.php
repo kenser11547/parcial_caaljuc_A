@@ -72,7 +72,7 @@
             <table border="3px solid">
                 <thead>
                     <tr>
-                        <th>INFORMACION</th>
+                        <th>CARACTER</th>
                         <th>RESULTADO</TH>
                     </tr>
                 </thead>
@@ -108,7 +108,7 @@
             <table border="3px solid">
                 <thead>
                     <tr>
-                        <th>INFORMACION</th>
+                        <th>EPISODIO</th>
                         <th>RESULTADO</TH>
                     </tr>
                 </thead>
@@ -140,7 +140,7 @@
             <table border="3px solid">
                 <thead>
                     <tr>
-                        <th>INFORMACION</th>
+                        <th>LOCALIZACION</th>
                         <th>RESULTADO</TH>
                     </tr>
                 </thead>
